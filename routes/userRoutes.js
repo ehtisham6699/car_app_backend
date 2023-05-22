@@ -1,0 +1,11 @@
+const express = require("express");
+const router = express.Router();
+const db = require("../config/database");
+const User = require("../models/userSchema");
+const jwt = require("jsonwebtoken");
+const userController = require("../controller/userController");
+var { passport } = require("../auth/passport_auth");
+//router.post("/login", userController.login);
+router.post("/register", userController.register);
+router.post("/login", userController.login);
+module.exports = router;
