@@ -13,11 +13,6 @@ const swaggerOptions = {
       },
     ],
   },
-  components: {
-    schemas: {
-      $ref: "#/components/schemas/Car",
-    },
-  },
   apis: [
     "./routes/userRoutes.js",
     "./routes/carRoutes.js",
